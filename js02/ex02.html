@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var city=["서울" , "부산" , "대전"];
+		var joindata1 = city.join();
+		var joindata2 = city.join("-");
+		var joindata3 = city.join(" 그리고 ");
+		document.write("조인전 : " + typeof city + "<p/>");
+		document.write("조인결과 : " + typeof joindata1 + "<p/>");
+		document.write("조인 결과 : " + joindata1 + "<p/>");
+		document.write("조인 결과 : " + joindata2 + "<p/>");
+		document.write("조인 결과 : " + joindata3 + "<p/>");	
+		
+		document.write("============= concat ===========<br>");
+		
+		var city02 = ["Seoul02" , "Busan02" , "Daegeon02"];
+		var data01 = city.concat("Suwon" , "Susuwon");
+		var data02 = city.concat(city02);
+		document.write("concat01 : " + data01 + "<p/>");
+		document.write("concat02 : " + data02 + "<p/>");
+		document.write("============== slice ===========<br>");
+		document.write("slice 전 데이터 : " + data02 + "<p/>");
+		document.write("1-4 : " + data02.slice(1,4) + "</p>");
+		
+		document.write("========== push & pop ============<br>");
+		document.write("push 전 데이터 : " + data02 + "<p/>");
+		data02.push("추가01" , "추가02"); // 마지막에 추가함 (반환 타입 int 개수를 반환)
+		document.write("push 후 데이터 : " + data02 + "<p/>");
+		data02.pop(); // 마지막 데이터를 꺼내옴 원본에선 삭제 (반환타입 데이터 )
+		document.write("pop 데이터 : " + data02 + "<p/>");
+
+		document.write("=============== unshift & shift ===========<br>");
+		document.write("unshift 전 데이터 : " + data02 + "<p/>");
+		data02.unshift("오늘" , "내일");
+		document.write("unshift 후 데이터 : " + data02 + "<p/>");
+		data02.shift();
+		document.write("shift 후 데이터 : " + data02 + "<p/>");
+
+	</script>
+
+</body>
+</html>

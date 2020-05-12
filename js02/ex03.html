@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script>
+		var kdata=["서울" , "부산" , "서울" , "청주" , "대구"];
+		function printArr(item , index) {
+			document.write("배열 데이터 [" + index + "] : " + item + "<br>");
+		}
+		kdata.forEach(printArr);
+		document.write("indexOf(서울) : " + kdata.indexOf("서울") + "<br>");
+		var nextIndex = kdata.indexOf("서울");
+		document.write("indexOf(서울) : " + kdata.indexOf("서울" , nextIndex+1));
+		
+		var data = {"f0":100 , "f1":200}; // hashMap같은 key와 value값
+		document.write("<hr>f0 : " + data.f0 + "<br>");
+		document.write("f1 : " + data["f1"] + "<br>");
+		data.f3 = "newData";
+		document.write("f3 : " + data["f3"]);
+	</script>
+
+</body>
+</html>

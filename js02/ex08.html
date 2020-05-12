@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	function textStyle() {
+		document.getElementById("msg").style.color="blue";
+		document.getElementById("msg").style.fontSize="30px"
+		document.getElementById("msg").style.fontStyle="italic"
+	}
+	function textHidden() {
+		document.getElementById("msg").style.visibility="hidden";
+	}
+	function textVisible() {
+		document.getElementById("msg").style.visibility="visible";
+	}
+	function rem() {
+		document.getElementById("rem").innerHTML = "";
+	}
+</script>
+</head>
+<body>
+	<div id="rem">
+		<p id="msg"> 문서 객체 스타일 변경하기 </p>
+		<input type="button" onclick="textStyle()" value="텍스트 스타일 변경">
+		<input type="button" onclick="textHidden()" value="텍스트 숨기기"> 
+		<input type="button" onclick="textVisible()" value="텍스트 보이기">
+	</div>
+	<button type="button" onclick="rem()"> 하위 태그 삭제</button>
+</body>
+</html>

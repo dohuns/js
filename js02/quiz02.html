@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+.red {
+	background-color: red;
+	position: absolute;
+	right : 10px;
+	top : 10px;
+}
+.image {
+	width:200px;
+	height:150px;
+	position: absolute;
+	right:10px;
+	top:10px;
+}
+.green {
+	background-color: green;
+	float: right;
+}
+</style>
+<script>
+
+	var iArr = [];
+	function select(i) {
+		var cnt = 0;
+		iArr.push(i+".jpg");
+
+		if(iArr.length < 5) {
+			img = document.createElement("img");
+			img.setAttribute("src" , i+".jpg");
+			img.setAttribute("width" , 200);
+			img.setAttribute("height" , 150);
+			document.getElementById("image").appendChild(img); 
+		} else {
+			
+		}
+
+		
+	} 
+
+
+
+
+</script>
+
+</head>
+<body>
+	<div>
+		<table border="1" style="width:80%;"> 
+			<tr>
+			<script>
+				for(var i=1;i<5;i++) {
+					document.write("<td>");
+					document.write("<img src='" + i + ".jpg' style='width:200px; height:200px' onclick='select(" + i + ")' ")
+					document.write("</td>");
+				}
+			</script>
+			</tr>
+			<tr>
+				<script>
+				for(var i=5;i<9;i++) {
+					document.write("<td>");
+					document.write("<img src='" + i + ".jpg' style='width:200px; height:200px' onclick='select(" + i + ")' ")
+					document.write("</td>");
+				}
+			</script>
+			</tr>
+		</table>
+		<div class="image" id="image" >
+			<div>
+				<h1 style="background-color:red"> 목록이 없습니다.</h1>
+			</div>
+		
+			
+		</div>
+
+	</div>
+
+</body>
+</html>

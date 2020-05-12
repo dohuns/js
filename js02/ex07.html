@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script>
+	function insertOpt() {
+		var insert = document.getElementById("insert");
+		var arr = ["야구" , "축구" , "배구" , "족구"];
+		for(i = 0; i<arr.length; i++) {
+			var opt = document.createElement("option");
+			opt.value = arr[i];
+			opt.innerHTML = arr[i];
+			insert.appendChild(opt);
+		}	
+	}
+</script>
+</head>
+<body onload="insertOpt();">
+	<select id="insert">
+		<option> 1111 </option>
+		<option> 2222 </option>
+		<option> 3333 </option>
+
+	</select>
+
+</body>
+</html>

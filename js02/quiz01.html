@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script>
+	mybook = new Array()
+    for (i = 0; i < 8; i++) {
+        mybook[i] = i+1 + ".jpg";
+	}
+	var j = 0;
+	function start() {
+		console.log(mybook[j]);
+		document.getElementById("myImage").src = mybook[j];
+		if(j < 7 ) {
+			j++; 
+		} else {
+			j = 0;
+		}
+		e = setTimeout("start()" , 1000);
+	}
+	function end() {
+		clearTimeout(e);
+	}
+	
+	function next() {
+		if(j<7) {
+			++j;
+		} else if (j == 7) {
+			j = 0;
+		}
+		document.getElementById("myImage").src = mybook[j];
+	}
+	function before() {
+		if(j == 0) {
+			j = 7;
+		} else if (j > 0) {
+			--j; 
+		}
+		document.getElementById("myImage").src = mybook[j];
+	}
+
+</script>
+
+
+
+</head>
+<body onload="start()">
+	<div align="center">
+		<img src="왼쪽화살표.jpg" style="width:100px; height:100px" onclick="before()" onmouseover="end()" onmouseout="start()">
+		<img id="myImage" src="1.jpg" style="width:300px; height:500px"
+		onmouseover="end()" onmouseout="start()" >
+		<img src="오른쪽화살표.jpg" style="width:100px; height:100px" onclick="next()" onmouseover="end()" onmouseout="start()"> 
+	</div>
+
+</body>
+</html>
