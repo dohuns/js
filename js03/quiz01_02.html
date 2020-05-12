@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style>
+strong {
+	color:red;
+}
+</style>
+
+<script>
+	function regist() {
+		
+		if(document.getElementById("ID").value == "") {
+			alert("아이디를 입력하세요!")
+		} else if(document.getElementById("PW").value == "") {
+			alert("비밀번호를 입력하세요!")
+		} else {
+			fo.submit();
+		}
+	}
+	function pwChk() {
+		if(document.getElementById("PW").value != document.getElementById("rPW").value) {
+			document.getElementById("st").innerHTML = "불일치!!";
+			document.getElementById("st").style.color= "red";
+			document.getElementById("PW").value = "";
+			document.getElementById("rPW").value = "";
+			document.getElementById("PW").focus();
+		} else {
+			document.getElementById("st").innerHTML = "일치!!";
+			document.getElementById("st").style.color= "blue";
+		}
+	}
+</script>
+
+</head>
+<body>
+	<h1> 계정 등록 페이지 입니다. </h1>
+	<form id="fo" action="quiz01_03.html">
+		<input type="text" placeholder="아이디" id="ID"><strong> (*필수항목)</strong> <br>
+		<input type="text" placeholder="비밀번호" id="PW"> <strong>(*필수항목)</strong><br>
+		<input type="text" placeholder="비밀번호 확인" id="rPW" onchange="pwChk()"><strong id="st"></strong> <br>
+		<input tpye="text" placeholder="이름" id="name"> <br>
+	</form>
+	<hr>
+
+	<input type="button" value="등록" onclick="regist()">
+
+</body>
+</html>

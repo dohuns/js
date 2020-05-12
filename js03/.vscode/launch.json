@@ -1,0 +1,64 @@
+// Use IntelliSense to learn about possible attributes.
+// Hover to view descriptions of existing attributes.
+// For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Launch Chrome 127.0.0.1 (8)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9277,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58176/p/js03/ex01.html?_cmAuth\u003dfzrlltivnw"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (9)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9271,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58176/p/js03/ex02.html?_cmAuth\u003dfzrlltivnw"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (10)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9275,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58176/p/js03/ex04.html?_cmAuth\u003dfzrlltivnw"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (11)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9280,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58176/p/js03/ex05.html?_cmAuth\u003dfzrlltivnw"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (12)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9279,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58176/p/js03/ex06.html?_cmAuth\u003dfzrlltivnw"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (13)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9281,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58176/p/js03/ex08.html?_cmAuth\u003dfzrlltivnw"
+    },
+    {
+      "name": "Launch Chrome 127.0.0.1 (14)",
+      "type": "chrome",
+      "request": "launch",
+      "port": 9276,
+      "webRoot": "${workspaceFolder}",
+      "url": "http://127.0.0.1:58176/p/js03/ex09.html?_cmAuth\u003dfzrlltivnw"
+    }
+  ]
+}
